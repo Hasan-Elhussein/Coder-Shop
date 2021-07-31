@@ -105,8 +105,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E4O-RZ-JeO">
-                                <rect key="frame" x="0.0" y="70" width="375" height="553"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E4O-RZ-JeO">
+                                <rect key="frame" x="2" y="70" width="371" height="553"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r9t-a3-RI6">
                                     <size key="itemSize" width="180" height="260"/>
@@ -131,33 +131,30 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes Logo Graphic T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-c1-c1a">
                                                     <rect key="frame" x="8" y="188" width="164" height="38.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="38.5" id="PcD-4f-29e"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.19561333355215405" green="0.19561333355215405" blue="0.19561333355215405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxN-2Y-X0G">
-                                                    <rect key="frame" x="8" y="232.5" width="164" height="19.5"/>
+                                                    <rect key="frame" x="8" y="234.5" width="23.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="BKA-c1-c1a" firstAttribute="leading" secondItem="jgw-N8-VSJ" secondAttribute="leadingMargin" id="6CP-cB-5HJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="yNm-Cg-HHk" secondAttribute="trailing" id="6T9-4F-2bZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="VxN-2Y-X0G" secondAttribute="bottom" constant="6" id="ARY-k1-UUh"/>
                                                 <constraint firstItem="yNm-Cg-HHk" firstAttribute="top" secondItem="jgw-N8-VSJ" secondAttribute="top" id="Jr9-ld-tyh"/>
-                                                <constraint firstItem="VxN-2Y-X0G" firstAttribute="leading" secondItem="jgw-N8-VSJ" secondAttribute="leading" constant="8" id="ROv-mo-6vi"/>
-                                                <constraint firstItem="BKA-c1-c1a" firstAttribute="top" secondItem="yNm-Cg-HHk" secondAttribute="bottom" constant="8" id="YcT-A2-9CG"/>
-                                                <constraint firstItem="BKA-c1-c1a" firstAttribute="leading" secondItem="jgw-N8-VSJ" secondAttribute="leading" constant="8" id="YmB-Ym-aDb"/>
+                                                <constraint firstItem="VxN-2Y-X0G" firstAttribute="top" secondItem="BKA-c1-c1a" secondAttribute="bottom" constant="8" id="MTq-il-5lx"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VxN-2Y-X0G" secondAttribute="trailing" constant="20" symbolic="YES" id="Ngm-gw-cm7"/>
+                                                <constraint firstItem="VxN-2Y-X0G" firstAttribute="leading" secondItem="jgw-N8-VSJ" secondAttribute="leading" constant="8" id="YNF-eM-ib9"/>
+                                                <constraint firstItem="BKA-c1-c1a" firstAttribute="top" secondItem="yNm-Cg-HHk" secondAttribute="bottom" constant="8" id="a5J-Tw-4Wh"/>
+                                                <constraint firstAttribute="trailing" secondItem="BKA-c1-c1a" secondAttribute="trailing" constant="8" id="c5N-Z9-03B"/>
                                                 <constraint firstItem="yNm-Cg-HHk" firstAttribute="leading" secondItem="jgw-N8-VSJ" secondAttribute="leading" id="gcC-5c-Wg0"/>
-                                                <constraint firstAttribute="bottom" secondItem="VxN-2Y-X0G" secondAttribute="bottom" constant="8" id="i7w-bW-gMB"/>
-                                                <constraint firstAttribute="trailing" secondItem="BKA-c1-c1a" secondAttribute="trailing" constant="8" id="pjx-RY-ILk"/>
-                                                <constraint firstAttribute="trailing" secondItem="VxN-2Y-X0G" secondAttribute="trailing" constant="8" id="zPv-qf-Kvb"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="180" height="260"/>
                                         <connections>
                                             <outlet property="productImage" destination="yNm-Cg-HHk" id="zdz-PH-udj"/>
                                             <outlet property="productPrice" destination="VxN-2Y-X0G" id="8yy-2Q-7Ec"/>
@@ -175,8 +172,8 @@
                             <constraint firstItem="5Fd-eH-PXN" firstAttribute="leading" secondItem="AF6-g0-32N" secondAttribute="leading" constant="16" id="F1L-LD-dwZ"/>
                             <constraint firstItem="E4O-RZ-JeO" firstAttribute="bottom" secondItem="AF6-g0-32N" secondAttribute="bottom" id="GGs-vn-Wng"/>
                             <constraint firstItem="E4O-RZ-JeO" firstAttribute="top" secondItem="5Fd-eH-PXN" secondAttribute="bottom" constant="16" id="Z0Z-Zq-oO1"/>
-                            <constraint firstItem="E4O-RZ-JeO" firstAttribute="trailing" secondItem="AF6-g0-32N" secondAttribute="trailing" id="aTe-Cu-DnJ"/>
-                            <constraint firstItem="E4O-RZ-JeO" firstAttribute="leading" secondItem="AF6-g0-32N" secondAttribute="leading" id="m58-PC-Blp"/>
+                            <constraint firstItem="E4O-RZ-JeO" firstAttribute="trailing" secondItem="AF6-g0-32N" secondAttribute="trailing" constant="-2" id="aTe-Cu-DnJ"/>
+                            <constraint firstItem="E4O-RZ-JeO" firstAttribute="leading" secondItem="AF6-g0-32N" secondAttribute="leading" constant="2" id="m58-PC-Blp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="461-8h-9QE"/>

@@ -49,7 +49,7 @@ class DataService{
         case "SHIRTS":
             return getShirts()
         case "HATS":
-            return getShirts()
+            return getHats()
         case "HOODIES":
             return getHoodies()
         case "DIGITAL":
