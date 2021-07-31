@@ -55,7 +55,7 @@ class DataService{
         case "DIGITAL":
             return getDigitalGoods()
         default:
-            <#code#>
+            return getShirts()
         }
     }
     

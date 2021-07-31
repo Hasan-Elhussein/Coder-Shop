@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 class Product{
     private(set) public var title: String
     private(set) public var price: String

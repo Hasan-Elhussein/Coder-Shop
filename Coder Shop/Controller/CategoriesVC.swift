@@ -38,4 +38,23 @@ extension CategoriesVC: UITableViewDataSource, UITableViewDelegate{
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productVC = segue.destination as? ProductsVC{
+            
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            // if sender is nil the code will crash at build, otherwise we can make sure that the app will not crash at runtime.
+            assert(sender as? Category != nil)
+            
+            productVC.initProducts(category: sender as! Category)
+        }
+    }
+    
 }
