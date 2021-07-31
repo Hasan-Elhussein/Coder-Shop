@@ -23,11 +23,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mzk-HW-BPJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mzk-HW-BPJ">
                                 <rect key="frame" x="0.0" y="70" width="375" height="553"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="qgd-4X-iPp" customClass="CategoryCell" customModule="Coder_Shop" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="145" id="qgd-4X-iPp" customClass="CategoryCell" customModule="Coder_Shop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qgd-4X-iPp" id="O1i-LT-Wp8">
@@ -35,7 +35,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="ona-c6-cyi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="139"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="cI1-6V-F61"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-rZ-rwt">
                                                     <rect key="frame" x="134.5" y="55" width="106" height="35"/>
@@ -51,10 +54,10 @@
                                             <constraints>
                                                 <constraint firstItem="WQN-rZ-rwt" firstAttribute="centerY" secondItem="O1i-LT-Wp8" secondAttribute="centerY" id="968-Ys-7Eg"/>
                                                 <constraint firstItem="WQN-rZ-rwt" firstAttribute="centerX" secondItem="O1i-LT-Wp8" secondAttribute="centerX" id="AOf-gf-ygz"/>
-                                                <constraint firstAttribute="bottom" secondItem="ona-c6-cyi" secondAttribute="bottom" id="TWM-3v-eXw"/>
+                                                <constraint firstItem="ona-c6-cyi" firstAttribute="top" secondItem="O1i-LT-Wp8" secondAttribute="top" constant="3" id="CXI-FB-hSc"/>
+                                                <constraint firstAttribute="bottom" secondItem="ona-c6-cyi" secondAttribute="bottom" constant="3" id="gVZ-dM-dm1"/>
                                                 <constraint firstAttribute="trailing" secondItem="ona-c6-cyi" secondAttribute="trailing" id="gYm-m5-6xu"/>
                                                 <constraint firstItem="ona-c6-cyi" firstAttribute="leading" secondItem="O1i-LT-Wp8" secondAttribute="leading" id="n8O-Qg-jWh"/>
-                                                <constraint firstItem="ona-c6-cyi" firstAttribute="top" secondItem="O1i-LT-Wp8" secondAttribute="top" id="s8D-7a-syD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
